@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function videostart(){
+            document.querySelector('video').play();
+        }
+    </script>
 </head>
 <body>
-    <video src="/testdata-scratch/名称未設定.mp4" autoplay controls muted></video>
+    <video src="/testdata-scratch/My-Movie-540p30.mp4" controls></video>
     <script>
         document.querySelector('video').onended=function (event){
             location.href='/testdata-scratch/Untitled-57.html';
+        }
+        window.onload=()=>{
+            let data = document.createElement('button');
+            document.body.appendChild(data);
+            data.onclick="videostart";
+            data.click();
+            data.style.display='none';
         }
     </script>
 </body>
