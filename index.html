@@ -8,14 +8,15 @@
         function videostart(){
             document.querySelector('video').play();
         }
+        let url='/testdata-scratch/countdown/index.html';
     </script>
 </head>
 <body>
     <video src="/testdata-scratch/My-Movie-540p30 2.mp4" controls></video>
-    <button onclick="location.href='/testdata-scratch/穂緑祭カウントダウン.html'">スキップ</button>
+    <button onclick="location.href=url">スキップ</button>
     <script>
         document.querySelector('video').onended=function (event){
-            location.href='/testdata-scratch/穂緑祭カウントダウン.html';
+            location.href='url';
         }
         window.onload=()=>{
             let data = document.createElement('button');
