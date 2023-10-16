@@ -16,15 +16,9 @@
     <button onclick="location.href=url">スキップ</button>
     <script>
         document.querySelector('video').onended=function (event){
-            location.href='url';
+            location.href=url;
         }
-        window.onload=()=>{
-            let data = document.createElement('button');
-            document.body.appendChild(data);
-            data.onclick="videostart";
-            data.click();
-            data.style.display='none';
-        }
+        
     </script>
 </body>
 </html>
